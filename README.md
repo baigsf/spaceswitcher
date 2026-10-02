@@ -1,8 +1,8 @@
-# InstantSpaceSwitcher
+# SpaceSwitcher
 
 Native instant workspace switching on macOS. No more waiting for animations.
 
-https://github.com/user-attachments/assets/037422c9-3fb7-41cd-8da7-58d28c4c8eff
+> Fork of [jurplel/InstantSpaceSwitcher](https://github.com/jurplel/InstantSpaceSwitcher) with the macOS 27 (27.0) space-switching fix (upstream [PR #102](https://github.com/jurplel/InstantSpaceSwitcher/pull/102) by markokovac16, co-authored by maxvelkir).
 
 ## Features
 
@@ -18,18 +18,19 @@ A simple CLI is provided (`InstantSpaceSwitcher.app/Contents/MacOS/ISSCli --help
 ### Homebrew
 
 ```sh
-brew install --cask jurplel/tap/instant-space-switcher
+brew tap baigsf/tap
+brew install --cask spaceswitcher
 ```
 
 ### Downloads
 
-Pre-built binaries are available through Github Releases [here](https://github.com/jurplel/InstantSpaceSwitcher/tags).
+Pre-built binaries are available through Github Releases [here](https://github.com/baigsf/spaceswitcher/releases).
 
 ### Build from source
 
 ```sh
-git clone https://github.com/jurplel/InstantSpaceSwitcher
-cd InstantSpaceSwitcher
+git clone https://github.com/baigsf/spaceswitcher
+cd spaceswitcher
 ./dist/build.sh
 open ./build/InstantSpaceSwitcher.app
 ```
