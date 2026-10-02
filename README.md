@@ -10,8 +10,9 @@ Native instant workspace switching on macOS. No more waiting for animations.
 
 ### Download DMG
 
-Each push to `main` builds a DMG via the `Build` workflow. Download it from the
-latest run: **Actions → Build → Artifacts → `InstantSpaceSwitcher-dmg`**.
+Trigger the `Build` workflow manually (**Actions → Build → Run workflow**) when you
+want a DMG, then download it from that run:
+**Artifacts → `InstantSpaceSwitcher-dmg`**.
 
 Stable binaries are also available through Github Releases [here](https://github.com/baigsf/spaceswitcher/releases).
 
