@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="SpaceSwitcher logo" width="320">
+</p>
+
 # SpaceSwitcher
 
 Native instant workspace switching on macOS. No more waiting for animations.

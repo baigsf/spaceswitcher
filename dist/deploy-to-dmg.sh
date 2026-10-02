@@ -21,11 +21,20 @@ if [ ! -d "${APP_BUNDLE}" ]; then
   exit 1
 fi
 
+# Volume icon (shown when DMG is mounted / downloaded)
+VOLICON_ARGS=()
+if [ -f "Resources/AppIcon.icns" ]; then
+  VOLICON_ARGS=(--volicon "Resources/AppIcon.icns")
+else
+  echo "Warning: Resources/AppIcon.icns not found, DMG will have no custom volume icon."
+fi
+
 echo "Creating DMG..."
 rm -f "${DMG_NAME}"
 
 create-dmg \
   --volname "${PRODUCT_NAME}" \
+  "${VOLICON_ARGS[@]}" \
   --window-pos 200 120 \
   --window-size 600 400 \
   --icon-size 100 \
