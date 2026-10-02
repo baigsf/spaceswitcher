@@ -8,16 +8,12 @@ Native instant workspace switching on macOS. No more waiting for animations.
 
 ## Installation
 
-### Homebrew
+### Download DMG
 
-```sh
-brew tap baigsf/tap
-brew install --cask spaceswitcher
-```
+Each push to `main` builds a DMG via the `Build` workflow. Download it from the
+latest run: **Actions → Build → Artifacts → `InstantSpaceSwitcher-dmg`**.
 
-### Downloads
-
-Pre-built binaries are available through Github Releases [here](https://github.com/baigsf/spaceswitcher/releases).
+Stable binaries are also available through Github Releases [here](https://github.com/baigsf/spaceswitcher/releases).
 
 ### Build from source
 
